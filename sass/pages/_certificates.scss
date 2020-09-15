@@ -1,0 +1,23 @@
+.certificates {
+    
+    &__image {
+        width: 30%;
+        display: flex;  
+        margin: 0 auto;  
+        padding: 1rem;
+
+        @include respond(tab-port) {
+            width: 60%;
+            
+        }
+
+        @include respond(phone) {
+            width: 70%;
+        }
+        
+    }
+
+}
+  
+
+

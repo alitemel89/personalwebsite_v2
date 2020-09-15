@@ -1,0 +1,63 @@
+body {
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    
+
+}
+
+
+.heading-primary {
+    color:$color-white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+
+    &--before-main {
+        display: block;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: 0.5rem;
+        animation: moveInBottom 0.5s ease-in;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+       
+        
+    }
+
+    &--main {
+        display: block;
+        font-size: 8rem;
+        font-weight: 400;
+        animation: glowText 1.5s;
+        animation-delay: 1s;
+        font-family: 'Dancing Script', cursive;
+        text-transform: capitalize;
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
+    
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+        margin-bottom: 6rem;
+        margin-right: 2.5rem;
+        animation: moveInBottom 1s ease-in;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+
+}
+
